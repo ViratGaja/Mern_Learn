@@ -1,11 +1,18 @@
-import { useState } from 'react'
 import './App.css'
+import Home from './Home'
+import Dashboard from './Dashboard'
+import { Routes, Route } from "react-router-dom";
+import { Navbar } from './Navbar';
 
 function App() {
-
   return (
     <>
-     <h1 className='text-5xl'>Hello</h1>
+       <Navbar/>
+    <Routes>
+   
+      <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
     </>
   )
 }
