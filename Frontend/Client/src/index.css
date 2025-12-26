@@ -478,4 +478,19 @@
           background: #f8d7da;
           color: #721c24;
           border: 1px solid #f5c6cb;
-        }
+        }.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #ff4444;
+}
+
+.card-date {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
